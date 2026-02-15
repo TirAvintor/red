@@ -1,0 +1,15 @@
+apiVersion: cdi.kubevirt.io/v1beta1
+kind: DataVolume
+metadata:
+  name: windows11-installer-dv
+spec:
+  source:
+    http:
+      url: "https://www.mediafire.com/file/smwzrjuwq0j7eo0/Windows+11+Powerless+Edition.iso/file"
+  pvc:
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 6Gi  # Adjust based on ISO size
+    storageClassName: gp2
