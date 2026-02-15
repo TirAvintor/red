@@ -5,11 +5,12 @@ metadata:
 spec:
   source:
     http:
-      url: "https://www.mediafire.com/file/smwzrjuwq0j7eo0/Windows+11+Powerless+Edition.iso/file"
+      url: "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_English_x64.iso?t=f784695b-25fa-42b8-a646-5bc614f4ca1f&P1=1771263826&P2=601&P3=2&P4=RhfANERwZHgZeS25QMEQep6oaq2x8p9kJbLSEXBBvgJM5owqU6t02NhVPAfmza68CY2w3XWcG6vVTHyKhMey%2fq2VYGH9ErfNZUFjVC9o07jKl58JlD7mMkjCwNI79bO2cPORKEl8WFzJydKsAhQC2znA8q8U9BaKeppKIgkGwprHTLuLl6OGe%2fymtS5yg4xZvM3DCcIq2PvU8TvTocI4alSGXLY22V3YU4p57uft0x0ugfDf7TGvRo%2bD2%2bCJYuiwRQoIaxIdxw2SHeCS%2forqnfsEOBMSd1g0kHONqfTpGtIam4m2DC367Ldt1Yw0IIseZe0ZsRdZSCAC65G7%2baMsWA%3d%3d"
   pvc:
     accessModes:
       - ReadWriteOnce
     resources:
       requests:
-        storage: 6Gi  # Adjust based on ISO size
+        storage: 7.2Gi  # Adjust based on ISO size
     storageClassName: gp2
+
