@@ -5,7 +5,7 @@ metadata:
 spec:
   source:
     http:
-      url: "Link"
+      url: "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_English_x64.iso?t=8151f193-4b0b-4554-8f55-ec3a2dbff229&P1=1771357578&P2=601&P3=2&P4=K7Ajc8E4JtGj6%2b4VxBe3gVb1XhY8j4fU9GOyiRpV97Ua2XJ7q0J%2bLGEnGgKBYGmAyNQ%2fZKflsYxTGau0J%2fWDQdlfsJd516ipdbYquBpThLcsOKRvBFVHbLIh87A7RAoiv%2bY9POD3zkdwOwhvVKeAYon66T82w%2b7yn0wRQq4SXLI7ueS6Efm5zPEJopzlJ47c4pIXxdL0kiYhICH7SiQubAvoWpImwweK8Fc%2buSGDrN1T4iWOl7ocVpyLOc2%2bWHzPMeAphNuXQjpe%2bXn0pwyyiHH0n8e07v%2frZN%2fUhwrDd18SjQCTJ1Pgf0uiBqGuCh%2bQhg43I7DWunPHjBJJ8MTPYA%3d%3d"
   pvc:
     accessModes:
       - ReadWriteOnce
@@ -13,4 +13,5 @@ spec:
       requests:
         storage: 8Gi  # Adjust based on ISO size
     storageClassName: gp2
+
 
