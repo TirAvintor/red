@@ -11,7 +11,8 @@ spec:
       - ReadWriteOnce
     resources:
       requests:
-        storage: 14Gi  # Adjust based on ISO size
+        storage: 15Gi  # Adjust based on ISO size
     storageClassName: gp2
+
 
 
