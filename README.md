@@ -4,3 +4,19 @@
 tskey-auth-k8rSLeZCLv11CNTRL-
 
 D3QUgEUzypF1mFgxSH1hqFnUBeZpWMF3
+
+```
+reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_DWORD /d 1 /f
+```
+
+```
+reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassSecureBootCheck /t REG_DWORD /d 1 /f
+```
+
+```
+reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_DWORD /d 1 /f
+```
+
+```
+reg.exe add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f
+```
