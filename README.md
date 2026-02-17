@@ -1,8 +1,8 @@
 ### README.md
 [Click](https://console-openshift-console.apps.rm1.0a51.p1.openshiftapps.com/k8s/ns/centricdiameter-dev/kubevirt.io~v1~VirtualMachine)
 
-tskey-auth-kKEHZtxL1N11CNTRL-
-7Dxcpa3PxcG52m9iSmo2eGcPcN6u6KHw
+tskey-auth-k2RAr8QbqY11CNTRL-
+sQLxz574AXB3xXw1KPGuXBMfBTu5VBSJ
 
 ```
 reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_DWORD /d 1 /f
