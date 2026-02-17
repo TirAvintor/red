@@ -17,11 +17,11 @@ spec:
             memory: 17Gi
         devices:
           disks:
-            - name: harddisk
-              disk:
-                bus: sata
             - name: cdromiso
               cdrom:
+                bus: sata
+            - name: harddisk
+              disk:
                 bus: sata
             - name: cloudinitdisk
               disk:
@@ -43,4 +43,5 @@ spec:
         - name: cloudinitdisk
           cloudInitNoCloud:
             userData: |
+
               #cloud-config
