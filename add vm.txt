@@ -9,6 +9,8 @@ spec:
       labels:
         kubevirt.io/domain: windows11-vm
     spec:
+      securityContext:
+        fsGroup: 107
       domain:
         cpu:
           cores: 18
@@ -43,4 +45,5 @@ spec:
         - name: cloudinitdisk
           cloudInitNoCloud:
             userData: |
+
               #cloud-config
