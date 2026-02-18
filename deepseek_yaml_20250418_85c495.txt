@@ -2,9 +2,10 @@ apiVersion: cdi.kubevirt.io/v1beta1
 kind: DataVolume
 metadata:
   name: windows11-vm-disk
+  namespace: centricidiameter-dev
 spec:
   source:
-    blank: {}
+    blank: {}   # <-- порожній диск
   pvc:
     accessModes:
       - ReadWriteMany
