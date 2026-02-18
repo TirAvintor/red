@@ -8,11 +8,13 @@ spec:
       url: "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_English_x64.iso?t=cd7386bf-c39e-4776-b90d-e10a6b111f2f&P1=1771515033&P2=601&P3=2&P4=E0e0NiYF7P4DkALibZzxFq6mgbuYqeBR3Xky22Jp3OFJVo46Q%2f%2f5ncPXo92iOkRO17PSoctttAYGha3vn1z1TD2I%2fnW8j4CgPFJp9zjf79GgppeACvvt8Aut1WU3zqd5CMj2zwV7SBDOJ35DuTMJz1YwKrcZS%2fYK4%2b8u5bN3o4P1WJSj0I%2bo%2f8bd%2f%2f%2fpuErizP4FeT9E3BpfW2RnuwMXP78RH3W20sefTAZrnJNYdbqZPYwORCgEGZQ5zUQ0pP%2bWHPDXd7NCA7saDR6JhI%2b4p07VS5GgxBSLw8NjwXELPanl8VT7QaoBShvtZY8p5ZpvlN1j1qwzY0tGT3E%2bc40CBw%3d%3d"
   pvc:
     accessModes:
-      - ReadWriteOnce
+      - ReadWriteMany
     resources:
       requests:
         storage: 8Gi  # Adjust based on ISO size
-    storageClassName: gp2
+    storageClassName: efs-sc
+    volumeMode: Filesystem
+
 
 
 
