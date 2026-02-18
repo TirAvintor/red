@@ -35,8 +35,8 @@ spec:
           pod: {}
       volumes:
         - name: harddisk
-          persistentVolumeClaim:
-            claimName: windows11-vm-disk
+          dataVolume:   # <-- краще через DataVolume
+            name: windows11-vm-disk
         - name: cdromiso
           dataVolume:
             name: windows11-installer-dv
