@@ -1,14 +1,15 @@
-apiVersion: v1
-kind: PersistentVolumeClaim
+apiVersion: cdi.kubevirt.io/v1beta1
+kind: DataVolume
 metadata:
   name: windows11-vm-disk
-  namespace: centricidiameter-dev
 spec:
-  accessModes:
-    - ReadWriteMany
-  resources:
-    requests:
-      storage: 50Gi
-  storageClassName: efs-sc
-  volumeName: efs-pv-gid107   # <-- Прив’язка до PV
-  volumeMode: Filesystem
+  source:
+    blank: {}
+  pvc:
+    accessModes:
+      - ReadWriteMany
+    resources:
+      requests:
+        storage: 50Gi
+    storageClassName: efs-sc
+    volumeMode: Filesystem
