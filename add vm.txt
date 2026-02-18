@@ -9,8 +9,6 @@ spec:
       labels:
         kubevirt.io/domain: windows11-vm
     spec:
-      securityContext:
-        fsGroup: 107
       domain:
         cpu:
           cores: 18
@@ -32,6 +30,8 @@ spec:
             - name: default
               model: e1000
               masquerade: {}
+        securityContext:        # <-- правильне місце
+          fsGroup: 107
       networks:
         - name: default
           pod: {}
@@ -45,5 +45,4 @@ spec:
         - name: cloudinitdisk
           cloudInitNoCloud:
             userData: |
-
               #cloud-config
