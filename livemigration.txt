@@ -1,12 +1,15 @@
 apiVersion: v1
-kind: PersistentVolumeClaim
+kind: PersistentVolume
 metadata:
-  name: windows11-vm-disk
+  name: efs-pv-gid107
 spec:
+  capacity:
+    storage: 50Gi
   accessModes:
     - ReadWriteMany
-  resources:
-    requests:
-      storage: 64Gi
-  storageClassName: efs-sc  # e.g., "standard" or "hostpath-provisioner"
-  volumeMode: Block
+  storageClassName: efs-sc
+  csi:
+    driver: efs.csi.aws.com
+    volumeHandle: fs-0344ca4a044ae6d16   # ID твоєї EFS файлової системи
+    volumeAttributes:
+      gid: "107"
