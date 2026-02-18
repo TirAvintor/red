@@ -37,6 +37,9 @@ spec:
         - name: harddisk
           persistentVolumeClaim:
             claimName: windows11-vm-disk
+      securityContext:
+        runAsUser: 107
+        runAsGroup: 107
         - name: cdromiso
           dataVolume:
             name: windows11-installer-dv
@@ -44,4 +47,5 @@ spec:
           cloudInitNoCloud:
             userData: |
               #cloud-config
+
 
