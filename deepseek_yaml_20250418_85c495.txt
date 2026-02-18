@@ -2,11 +2,13 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: windows11-vm-disk
+  namespace: centricidiameter-dev
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
-      storage: 64Gi
-  storageClassName: gp2  # e.g., "standard" or "hostpath-provisioner"
-  volumeMode: Block
+      storage: 50Gi
+  storageClassName: efs-sc
+  volumeName: efs-pv-gid107   # <-- Прив’язка до PV
+  volumeMode: Filesystem
