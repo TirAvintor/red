@@ -30,8 +30,6 @@ spec:
             - name: default
               model: e1000
               masquerade: {}
-        securityContext:        # <-- правильне місце
-          fsGroup: 107
       networks:
         - name: default
           pod: {}
@@ -46,3 +44,4 @@ spec:
           cloudInitNoCloud:
             userData: |
               #cloud-config
+
