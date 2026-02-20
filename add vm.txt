@@ -11,10 +11,10 @@ spec:
     spec:
       domain:
         cpu:
-          cores: 18
+          cores: 15
         resources:
           requests:
-            memory: 17Gi
+            memory: 15Gi
         devices:
           disks:
             - name: harddisk
@@ -43,4 +43,5 @@ spec:
         - name: cloudinitdisk
           cloudInitNoCloud:
             userData: |
+
               #cloud-config
