@@ -8,5 +8,5 @@ spec:
   resources:
     requests:
       storage: 56Gi
-  storageClassName: gp3-csi
+  storageClassName: gp3
   volumeMode: Block
