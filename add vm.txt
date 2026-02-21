@@ -43,9 +43,4 @@ spec:
         - name: cloudinitdisk
           cloudInitNoCloud:
             userData: |
-
               #cloud-config
-
-
-
-
