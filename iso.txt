@@ -5,7 +5,7 @@ metadata:
 spec:
   source:
     http:
-      url: "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_English_x64.iso?t=9a29a17b-fbaf-435c-b7dd-fded1b4d6849&P1=1771702017&P2=601&P3=2&P4=AF2ebih1JQNYcqkTOG9aTAVOlBFpl2OXDvSZ43uspa%2fyxn47ztwDwjeTdTlCgJFiPdwnYatrQmGmwqGUzmR%2bQIjswqlDtK0%2bgwvexGjl%2fE0NaW2%2fAUuHTXhZKr79lpOLnJgtsLtakWrOrscUqMCbREG%2bmev1ytM2V%2fOxF6U0H%2bsQD9bX2HQ1QxDU0ZysQUwEIeCtwr2yZ%2bjh035kFQdAx62UDIQ1wcl4Lt9gfFwXQhiaArRBiOVWO5bKRvQQfKJzyUKwUU1DFA49jB0xWOcV7t4z6H7jfstvOkl%2b8B0lLsOpXNO%2fMtXpnAvt7KFYT83JU0RpS5Qjeu8XeWqqj353Qw%3d%3d"
+      url: "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Russian_x64.iso?t=20a77370-41f5-44d4-b9d6-f2ac29d6672b&P1=1771860540&P2=601&P3=2&P4=ZPF%2b7aEVelLp7U1rluH%2b3DaHFFnkGXQLIZNvaHmhRW3vKiLZlqy0mqvMcCympEkPRCWXDEvpDYITa2F8J46z7CFuwh2Ka%2bZnvOF1N9Y%2fE5foVxe5kbyTXCYnjc7HzyQ2lnjPADE9bwj751TKpIZvyB2FheQPXe1aofS1YafFQaquQPPfjIJ02CZ1bvTmJU0mxVmwrDdznzQ8QdcrIjWFLRhffd3xeKlcgkrcoYf%2fw97eYj0vIBs0VqmKNkCteh5E0VOfFePin7xSo1UNai86%2f%2bsuACn%2bke1%2fUQSqxxamwi4sgf8yXpCOtYMyzetvPlc5A9DRkCFMwAksN%2bsJkqiHaA%3d%3d"
   pvc:
     accessModes:
       - ReadWriteOnce
@@ -13,3 +13,4 @@ spec:
       requests:
         storage: 7.3Gi
     storageClassName: gp3-csi
+
